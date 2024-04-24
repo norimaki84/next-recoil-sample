@@ -1,0 +1,71 @@
+// --- FONT ---
+//$baseFont: 'Noto Sans Japanese Regular', "Helvetica Neue", "Segoe UI", Helvetica, "游ゴシック体", YuGothic, "Yu Gothic M", "游ゴシック Medium", "Yu Gothic Medium", "メイリオ", Meiryo !default;
+
+// ---------------------
+// --- FONT SIZE -------
+// ---------------------
+$fontHeading01-01: 46px !default; // H1見出し
+$fontHeading01-02: 36px !default; // H1見出し2
+$fontHeading02-01: 32px !default; // H2見出し
+$fontHeading02-02: 24px !default; // H2見出し2
+$fontHeading03: 20px !default; // H3見出し
+$fontHeading04: 18px !default; // H4見出し
+$fontBase: 16px !default; // 本文
+$fontBase02: 13px !default; // 本文2/h4見出し(SP)
+$fontCaption: 10px !default; // キャプション
+
+// ---------------------
+// --- Color Palette ---
+// ---------------------
+// Light Tone
+// Primary
+$colorPrimary16_11-light: #1b2226;
+$colorPrimary9_03-light: #42494e;
+$colorPrimary20_72-light: #000000;
+// Secondary
+$colorSecondary11_44-light: #f9f9f9;
+$colorSecondary12_05-light: #ffffff;
+$colorSecondary20_72-light: #c6c6c6;
+// Gray
+$colorGray5-88_light: #b5b5b5;
+$colorGray9-74_light: #e7e7e7;
+$colorGray3-26_light: #858585;
+
+// Dark Tone
+// Primary
+$colorPrimary16_11-dark: #1b2226;
+$colorPrimary9_03-dark: #42494e;
+$colorPrimary16_25-dark: #212020;
+// Secondary
+$colorSecondary11_44-dark: #f9f9f9;
+$colorSecondary12_05-dark: #ffffff;
+$colorSecondary7_05-dark: #c6c6c6;
+// Gray
+$colorGray5-88_dark: #b5b5b5;
+$colorGray9-74_dark: #e7e7e7;
+$colorGray3-26_dark: #858585;
+
+// Background ライトトーンとダークトーンで共通
+$colorBackground: #f9f9f9;
+
+// ----------------------------
+// --- Text Color Variation ---
+// ----------------------------
+// Light Tone
+$colorStrong-light: #12171a; // 強調色
+$colorNormal-light: #32373a; // 通常色
+$colorNormal02-light: #686a6b; // 通常色2
+$colorNonStrong-light: #8f9294; // 非強調色
+$colorError-light: #a32139; // エラー色
+
+// Dark Tone
+$colorStrong-dark: #ffffff; // 強調色
+$colorNormal-dark: #d9d9d9; // 通常色
+$colorNormal02-dark: #929394; // 通常色2
+$colorNonStrong-dark: #6a6b6b; // 非強調色
+$colorError-dark: #ea0933; // エラー色
+
+// ----------------------------
+// --- PostList Breakpoint ---
+// ----------------------------
+$postListbreakPoints: 900, 1200, 1440;

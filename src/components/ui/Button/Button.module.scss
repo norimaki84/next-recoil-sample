@@ -1,0 +1,15 @@
+// @use '../../../styles/base/config' as c;
+
+// .Button {
+//   padding: 5px 5px;
+//   font-size: 16px;
+//   color: #000000;
+//   @include c.SansJpBold();
+
+//   // スマホのスタイル
+//   @include c.mq-down() {
+//     color: #ffffff;
+//     background-color: v.$colorError-light;
+//     font-size: c.get-vw(24px);
+//   }
+// }

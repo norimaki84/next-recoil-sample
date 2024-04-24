@@ -1,0 +1,193 @@
+@use 'sass:math';
+@use 'sass:map';
+@forward 'fonts';
+@use 'variables' as v;
+@use 'functions' as f;
+
+// font設定
+// Noto Sans JP
+@mixin SansJpLight {
+  font-family: 'NotoSansJP-Light', sans-serif;
+}
+
+@mixin SansJpRegular {
+  font-family: 'NotoSansJP-Regular', sans-serif;
+}
+
+@mixin SansJpMedium {
+  font-family: 'NotoSansJP-Medium', sans-serif;
+}
+
+@mixin SansJpBold {
+  font-family: 'NotoSansJP-Bold', sans-serif;
+}
+
+// Work Sans
+@mixin WorkSansExtraLight {
+  font-family: 'WorkSans-ExtraLight', sans-serif;
+}
+
+@mixin WorkSansLight {
+  font-family: 'WorkSans-Light', sans-serif;
+}
+
+@mixin WorkSansRegular {
+  font-family: 'WorkSans-Regular', sans-serif;
+}
+
+@mixin WorkSansMedium {
+  font-family: 'WorkSans-Medium', sans-serif;
+}
+
+@mixin WorkSansSemiBold {
+  font-family: 'WorkSans-SemiBold', sans-serif;
+}
+
+@mixin WorkSansBold {
+  font-family: 'WorkSans-Bold', sans-serif;
+}
+
+// --- MEDIA QUERY ---
+$breakpoint-up: (
+  'sm': 'screen and (min-width: 540px)',
+  'md': 'screen and (min-width: 750px)',
+  'lg': 'screen and (min-width: 1024px)',
+  'xl': 'screen and (min-width: 1100px)',
+) !default;
+
+$breakpoint-down: (
+  'sm': 'screen and (max-width: 539px)',
+  'md': 'screen and (max-width: 749px)',
+  'lg': 'screen and (max-width: 1023px)',
+  'xl': 'screen and (max-width: 1099px)',
+  'post-pc-md': 'screen and (max-width: 1440px)',
+  'post-pc-sm': 'screen and (max-width: 1199px)',
+  'post-sp': 'screen and (max-width: 899px)',
+) !default;
+
+@mixin mq-up($breakpoint: md) {
+  @media #{map.get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+// スマホレイアウト時
+@mixin mq-down($breakpoint: md) {
+  @media #{map.get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
+
+// letter-spacing設定
+@mixin tracking($value) {
+  letter-spacing: math.div($value, 1000) + em;
+}
+
+// フォントサイズとline-heightセット関数
+// H1見出し
+@mixin fontSetH01-01 {
+  font-size: v.$fontHeading01-01;
+  line-height: 1.4;
+  @include tracking(200);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontHeading01-01);
+  }
+}
+
+// H1見出し2
+@mixin fontSetH01-02 {
+  font-size: v.$fontHeading01-02;
+  line-height: 1.4;
+  @include tracking(100);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontHeading01-02);
+  }
+}
+
+// H2見出し
+@mixin fontSetH02-01 {
+  font-size: v.$fontHeading02-01;
+  line-height: 1.25;
+  @include tracking(100);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontHeading02-01);
+  }
+}
+
+// H2見出し2
+@mixin fontSetH02-02 {
+  font-size: v.$fontHeading02-02;
+  line-height: 1.4;
+  @include tracking(100);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontHeading02-02);
+  }
+}
+
+// H3見出し
+@mixin fontSetH03 {
+  font-size: v.$fontHeading03;
+  line-height: 1.4;
+  @include tracking(100);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontHeading03);
+  }
+}
+
+// H4見出し
+@mixin fontSetH04 {
+  font-size: v.$fontHeading04;
+  line-height: 1.4;
+  @include tracking(100);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontHeading04);
+  }
+}
+
+// 本文
+@mixin fontSetBase {
+  font-size: v.$fontBase;
+  line-height: 2;
+  @include tracking(60);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontBase);
+  }
+}
+
+// 本文2 / h4見出し(SP)
+@mixin fontSetBase02 {
+  font-size: v.$fontBase02;
+  line-height: 2;
+  @include tracking(60);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontBase02);
+  }
+}
+
+// 本文2 / h4見出し(SP)
+@mixin fontSetCaption {
+  font-size: v.$fontCaption;
+  line-height: 1.5;
+  @include tracking(60);
+
+  // スマホ時にフォントサイズのみ変更
+  @include mq-down() {
+    font-size: f.get-vw(v.$fontCaption);
+  }
+}

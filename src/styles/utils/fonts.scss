@@ -1,0 +1,103 @@
+//フォントファイルの読み込み設定
+
+/* Noto Sans JP */
+@font-face {
+  font-family: 'NotoSansJP-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansJP/NotoSansJP-Light.woff') format('woff'),
+    url('/assets/fonts/NotoSansJP/NotoSansJP-Light.woff2') format('woff2'),
+    url('/assets/fonts/NotoSansJP/NotoSansJP-Light.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansJP/NotoSansJP-Regular.woff') format('woff'),
+    url('/assets/fonts/NotoSansJP/NotoSansJP-Regular.woff2') format('woff2'),
+    url('/assets/fonts/NotoSansJP/NotoSansJP-Regular.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansJP/NotoSansJP-Medium.woff') format('woff'),
+    url('/assets/fonts/NotoSansJP/NotoSansJP-Medium.woff2') format('woff2'),
+    url('/assets/fonts/NotoSansJP/NotoSansJP-Medium.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansJP-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/assets/fonts/NotoSansJP/NotoSansJP-Bold.woff') format('woff'),
+    url('/assets/fonts/NotoSansJP/NotoSansJP-Bold.woff2') format('woff2'),
+    url('/assets/fonts/NotoSansJP/NotoSansJP-Bold.otf') format('opentype');
+  font-display: swap;
+}
+
+/* Work Sans */
+@font-face {
+  font-family: 'WorkSans-ExtraLight';
+  font-weight: 200;
+  font-style: normal;
+  src: url('/assets/fonts/WorkSans/WorkSans-ExtraLight.woff') format('woff'),
+    url('/assets/fonts/WorkSans/WorkSans-ExtraLight.woff2') format('woff2'),
+    url('/assets/fonts/WorkSans/WorkSans-ExtraLight.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/assets/fonts/WorkSans/WorkSans-Light.woff') format('woff'),
+    url('/assets/fonts/WorkSans/WorkSans-Light.woff2') format('woff2'),
+    url('/assets/fonts/WorkSans/WorkSans-Light.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/assets/fonts/WorkSans/WorkSans-Regular.woff') format('woff'),
+    url('/assets/fonts/WorkSans/WorkSans-Regular.woff2') format('woff2'),
+    url('/assets/fonts/WorkSans/WorkSans-Regular.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/assets/fonts/WorkSans/WorkSans-Medium.woff') format('woff'),
+    url('/assets/fonts/WorkSans/WorkSans-Medium.woff2') format('woff2'),
+    url('/assets/fonts/WorkSans/WorkSans-Medium.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/assets/fonts/WorkSans/WorkSans-SemiBold.woff') format('woff'),
+    url('/assets/fonts/WorkSans/WorkSans-SemiBold.woff2') format('woff2'),
+    url('/assets/fonts/WorkSans/WorkSans-SemiBold.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'WorkSans-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/assets/fonts/WorkSans/WorkSans-Bold.woff') format('woff'),
+    url('/assets/fonts/WorkSans/WorkSans-Bold.woff2') format('woff2'),
+    url('/assets/fonts/WorkSans/WorkSans-Bold.otf') format('opentype');
+  font-display: swap;
+}

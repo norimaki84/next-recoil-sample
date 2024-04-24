@@ -1,0 +1,13 @@
+@use '../../../styles/base/config' as c;
+
+.page {
+  /* TBD */
+}
+
+.container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
